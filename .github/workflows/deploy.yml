@@ -33,7 +33,12 @@ jobs:
         run: npm run lint
 
       - name: Build site
-        run: mkdir dist && cp index.html dist/
+        run: |
+          mkdir -p dist
+          cp index.html dist/
+          cp style.css dist/
+          cp script.js dist/
+          cp ugly-screenshot.png dist/
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
