@@ -38,7 +38,7 @@ jobs:
           cp index.html dist/
           cp style.css dist/
           cp script.js dist/
-          cp ugly-screenshot.png dist/
+          cp ugly-ui-screenshot.png dist/
 
       - name: Upload artifact for GitHub Pages
         uses: actions/upload-pages-artifact@v3
