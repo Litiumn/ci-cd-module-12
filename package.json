@@ -1,11 +1,11 @@
 {
   "name": "ugly-ui-site",
   "version": "1.0.0",
-  "description": "Static site for SCM activity",
+  "type": "module",
   "scripts": {
     "lint": "eslint ."
   },
   "devDependencies": {
-    "eslint": "^9.0.0"
+    "eslint": "^9.38.0"
   }
 }
