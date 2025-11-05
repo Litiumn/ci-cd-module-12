@@ -22,5 +22,8 @@ describe("Loader Functionality", () => {
   test("adds a loader to the DOM", () => {
     const loader = document.getElementById("circle-loader");
     expect(loader).not.toBeNull();
+
+    // Intentional fail: this message doesn't match the real one in script.js
+    expect(loader.textContent).toContain("Loading the interface...");
   });
 });
