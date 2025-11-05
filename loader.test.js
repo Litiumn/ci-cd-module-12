@@ -24,6 +24,6 @@ describe("Loader Functionality", () => {
     expect(loader).not.toBeNull();
 
     // Intentional fail: this message doesn't match the real one in script.js
-    expect(loader.textContent).toContain("Loading the interface...");
+    expect(loader.textContent).toContain("Loading the experience...");
   });
 });
